@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  mariadb:
+    image: mariadb:latest
+    container_name: mariadb_container
+    env
+    ports:
+      - "3306:3306"
+    privileged: true
+    volumes:
+      - mariadb_data:/var/lib/mysql
+volumes:
+  mariadb_data:
