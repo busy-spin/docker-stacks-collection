@@ -4,7 +4,8 @@ services:
   mariadb:
     image: mariadb:latest
     container_name: mariadb_container
-    env
+    env_file:
+      - .env
     ports:
       - "3306:3306"
     privileged: true
