@@ -11,5 +11,6 @@ services:
     privileged: true
     volumes:
       - mariadb_data:/var/lib/mysql
+      - ./my.cnf:/etc/mysql/my.cnf
 volumes:
   mariadb_data:
